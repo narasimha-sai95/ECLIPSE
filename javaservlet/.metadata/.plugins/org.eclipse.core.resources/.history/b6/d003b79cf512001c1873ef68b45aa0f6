@@ -1,0 +1,26 @@
+package jdbc;
+
+import java.sql.*;
+
+public class Democlass {
+
+	public static void main(String[] args) throws Exception {
+	
+		String url="jdbc:mysql://localost:3307/jdbc";
+		String uname="";
+		String pass="";
+		String query = "select name from student where sno=2";
+	Class.forName("com.mysql.jdbc.Driver");
+	
+		Connection con= DriverManager.getConnection(url,uname,pass);
+		
+		
+		Statement st=con.createStatement();
+		st.executeQuery(query);
+		
+		
+		
+		
+	}
+
+}

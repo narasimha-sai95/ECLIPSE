@@ -1,0 +1,15 @@
+package WTN;
+
+import java.io.DataOutputStream;
+import java.io.FileOutputStream;
+
+public class FileOut {
+
+	public static void main(String[] args) throws Exception{
+	FileOutputStream fos =new FileOutputStream("Demo.txt");
+	DataOutputStream dos = new DataOutputStream(fos);
+	dos.writeUTF("Demo Content");
+
+	}
+
+}

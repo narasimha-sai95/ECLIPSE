@@ -1,0 +1,25 @@
+package WTN;
+
+import java.awt.List;
+import java.util.*;
+
+public class list {
+
+	public static void main(String[] args) {
+		
+		
+	    List n = new ArrayList();
+	    n.add(1);
+	    n.add(2);
+	    n.add(3);
+	    
+	    //System.out.print(n);
+	    
+	    Iterator it = n.iterator();
+	    while(it.hasNext()) {
+	    System.out.println(it.next());
+	 
+		}
+	}
+
+}
